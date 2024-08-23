@@ -101,7 +101,7 @@ bill >= 50 && bill <= 300 ?
 //console.log("Coding Challenge 5- Data 1");
 //dolphinAverage = Math.round(calculateScore(44, 23, 71))
 //koalaAverage = Math.round(calculateScore(23, 34, 49))
-console.log("Data 2");
+/*console.log("Data 2");
 dolphinAverage = Math.round(calculateScore(85, 54, 41))
 koalaAverage = Math.round(calculateScore(23, 34, 27))
 console.log(dolphinAverage, koalaAverage)
@@ -120,4 +120,23 @@ function checkWinner(dolphinAverage, koalaAverage) {
         return console.log(`No team win!`)
     }
 }
-checkWinner(dolphinAverage, koalaAverage)
+checkWinner(dolphinAverage, koalaAverage)*/
+
+//Coding Challenge 6
+//Steven is still building his tip calculator, using the same rules as before: Tip 15% of
+//the bill if the bill value is between 50 and 300, and if the value is different, the tip is
+//20%.
+console.log("Coding Challenge 6")
+const bills = [125, 55, 44]
+const tips = []
+const totals = []
+let calcTip = function(bills) {
+    return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2
+}
+for (let index = 0; index < bills.length; index++) {
+    const tip = calcTip(bills[index]);
+    console.log("tip:" + tip)
+    tips.push(tip);
+    totals.push(tip + bills[index]);
+}
+console.log(bills, tips, totals)

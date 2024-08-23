@@ -42,7 +42,7 @@ else
 //There are two gymnastics teams, Dolphins and Koalas. They compete against each
 //other 3 times. The winner with the highest average score wins a trophy!
 //Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
-console.log("Coding Challenge 3 - Data 1")
+/*console.log("Coding Challenge 3 - Data 1")
 
 function calculateScore(score1, score2, score3) {
     let averageScore = (score1 + score2 + score3) / 3
@@ -73,4 +73,18 @@ if (dolphinAverage > koalaAverage && dolphinAverage >= 100) {
     console.log(`They draw!`);
 } else {
     console.log(`No one win!`);
-}
+}*/
+
+//Coding Challenge #4
+//Steven wants to build a very simple tip calculator for whenever he goes eating in a
+//restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and
+//300. If the value is different, the tip is 20%.
+
+//Data 1:Test for bill values 275, 40 and 430
+console.log("Coding Challenge 4- Data 1");
+const bill = 275
+const tip1 = bill * 0.15
+const tip2 = bill * 0.2
+bill >= 50 && bill <= 300 ?
+    console.log(`The bill was ${bill}, the tip was ${tip1}, and the total value ${bill+tip1}`) :
+    console.log(`The bill was ${bill}, the tip was ${tip2}, and the total value ${bill+tip2}`);
